@@ -1,68 +1,115 @@
-PROJECT OVERVIEW  
+# PROJECT OVERVIEW  
 
-• Problem & Solution: Nowadays, people don't know where their money goes each month. They spend money on food, transport, shopping, and entertainment without tracking it. This is a problem that even I encounter, hence, I’ve decided to build a personal expense tracker to document my expenses.
+## • Problem & Solution: 
+Nowadays, people don't know where their money goes each month. They spend money on food, transport, shopping, and entertainment without tracking it. This is a problem that even I encounter, hence, I’ve decided to build a personal expense tracker to document my expenses.
 
-• Algorithm: 
+## • Algorithm: 
 
-1. Create list “expenses” to store all expense records. 
-2. Display the main menu options: 
+#### 1. Create list “expenses” to store all expense records. 
+
+#### 2. Display the main menu options: 
  o Add Expense
+ 
  o View All Expenses 
+ 
  o Search Expense 
+ 
  o Delete Expense 
- o Calculate Total Spending 
+ 
+ o Calculate Total Spending
+ 
  o Display Spending by Category 
+ 
  o Show Highest Expense 
+ 
  o Save Data 
+ 
  o Exit 
-3. Ask the user to enter their choice. 
-4. If the user selects Add Expense: 
- o Ask for the date. 
- o Ask for the expense category. 
- o Ask for a short description. 
- o Ask for the expense amount. 
- o Store the entered information in a dictionary. 
- o Add the dictionary to the expenses list. 
- o Display a success message. 
-5. If the user selects View All Expenses: 
- o Check whether the expenses list is empty. 
- o If it is empty, display "No expenses found." 
- o Otherwise, display every expense with its date, category, description, and amount. 
-6. If the user selects Search Expense:
- o Ask the user to enter a category or keyword. 
- o Search through the expenses list. 
- o Display all matching expenses. 
- o If no matching expense is found, display an appropriate message. 
-7.If the user selects Delete Expense: 
- o Display all expenses with a serial number. 
- o Ask the user to enter the number of the expense they want to delete. 
- o Remove the selected expense from the list. 
- o Display a confirmation message. 
-8. If the user selects Calculate Total Spending: 
- o Set a variable named total to zero. 
- o Loop through every expense in the list. 
- o Add each expense amount to total. 
- o Display the total amount spent. 
-9. If the user selects Spending by Category: 
- o Create an empty dictionary to store category totals. 
- o Loop through every expense. 
- o Add each expense amount to its corresponding category. 
- o Display the total spending for every category. 
-10.If the user selects Highest Expense: 
- o Check whether any expenses exist. 
- o Compare all expense amounts. 
- o Find the expense with the largest amount. 
- o Display its date, category, description, and amount. 
-11.If the user selects Save Data: 
- o Save the expenses list to a file (such as a JSON file). 
- o Display a message confirming that the data has been saved. 
-12. If the user selects Exit: 
- o Save the expense data (optional). 
- o Display a thank-you message. 
- o End the program. 
-13. If the user selects any option other than Exit, return to the main menu and continue running the program until the user chooses to exit.
+ 
+#### 3. Ask the user to enter their choice. 
 
-• Visualization (Using Pseudocode):
+#### 4. If the user selects Add Expense: 
+ o Ask for the date. 
+ 
+ o Ask for the expense category. 
+ 
+ o Ask for a short description. 
+ 
+ o Ask for the expense amount. 
+ 
+ o Store the entered information in a dictionary. 
+ 
+ o Add the dictionary to the expenses list. 
+ 
+ o Display a success message. 
+ 
+#### 5. If the user selects View All Expenses: 
+ o Check whether the expenses list is empty. 
+ 
+ o If it is empty, display "No expenses found." 
+ 
+ o Otherwise, display every expense with its date, category, description, and amount. 
+
+#### 6. If the user selects Search Expense:
+ o Ask the user to enter a category or keyword. 
+
+ o Search through the expenses list. 
+ 
+ o Display all matching expenses. 
+ 
+ o If no matching expense is found, display an appropriate message. 
+
+#### 7.If the user selects Delete Expense: 
+ o Display all expenses with a serial number. 
+ 
+ o Ask the user to enter the number of the expense they want to delete. 
+ 
+ o Remove the selected expense from the list. 
+ 
+ o Display a confirmation message. 
+
+#### 8. If the user selects Calculate Total Spending: 
+ o Set a variable named total to zero. 
+ 
+ o Loop through every expense in the list. 
+ 
+ o Add each expense amount to total. 
+ 
+ o Display the total amount spent. 
+
+#### 9. If the user selects Spending by Category: 
+ o Create an empty dictionary to store category totals. 
+ 
+ o Loop through every expense. 
+ 
+ o Add each expense amount to its corresponding category. 
+ 
+ o Display the total spending for every category. 
+
+#### 10.If the user selects Highest Expense: 
+ o Check whether any expenses exist. 
+ 
+ o Compare all expense amounts. 
+ 
+ o Find the expense with the largest amount. 
+ 
+ o Display its date, category, description, and amount. 
+
+#### 11.If the user selects Save Data: 
+ o Save the expenses list to a file (such as a JSON file). 
+ 
+ o Display a message confirming that the data has been saved. 
+
+#### 12. If the user selects Exit: 
+ o Save the expense data (optional). 
+ 
+ o Display a thank-you message. 
+ 
+ o End the program. 
+
+#### 13. If the user selects any option other than Exit, return to the main menu and continue running the program until the user chooses to exit.
+
+## • Visualization (Using Pseudocode):
 
 // Main-Console
 
@@ -284,13 +331,15 @@ ENDPROCEDURE
 
 // End Of Program.
 
-• Libraries and Program Structures Used in the ACTUAL PYTHON PROGRAM:
+# • Libraries and Program Structures Used in the ACTUAL PYTHON PROGRAM:
 
- - Libraries Used :-
+
+####  - Libraries Used :-
 
 The program was developed using Python's built-in features. No external libraries were required for the core functionality, however, json & os libraries were used. The program relies on Python's built-in functions such as input(), print(), len(), and range().
 
- - Program Structure :-
+
+####  - Program Structure :-
 
 The program is divided into small, reusable functions, making the code easier to understand & maintain.
 The main functions are:
@@ -307,7 +356,8 @@ The main functions are:
 	load_data() – Loads saved expense records when the program starts.
 	main() – Controls the program by displaying the menu and calling the appropriate functions. 
 
- - Data Structures Used :-
+
+####  - Data Structures Used :-
 
 The program stores all expenses in a list.
 Each expense is represented as a dictionary containing the following information:
@@ -319,7 +369,8 @@ Each expense is represented as a dictionary containing the following information
 This combination of a list and dictionary allows the program to store multiple expense records efficiently while keeping each record organized and easy to access.
 
 
-**Why The Following Structures Were Chosen: **
+
+#### Why The Following Structures Were Chosen: 
 
 These structures were chosen because they make the program easy to understand & maintain. 
 Using functions avoids repeating code.
