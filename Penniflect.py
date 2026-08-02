@@ -1,5 +1,5 @@
 """
-PERSONAL EXPENSE TRACKER
+Penniflect
 ------------------------
 A simple console program to help you track your daily expenses.
 
