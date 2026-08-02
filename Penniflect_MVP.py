@@ -1,5 +1,5 @@
 """
-PERSONAL EXPENSE TRACKER - MVP VERSION
+Penniflect - MVP VERSION
 ---------------------------------------
 This is the minimum-viable version of the expense tracker.
 It only includes the core features needed to make the program useful:
